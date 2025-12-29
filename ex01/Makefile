@@ -6,7 +6,7 @@
 #    By: fmoulin <fmoulin@student.42.fr>            +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2025/09/11 14:02:02 by fmoulin           #+#    #+#              #
-#    Updated: 2025/12/27 19:48:24 by fmoulin          ###   ########.fr        #
+#    Updated: 2025/12/29 17:07:48 by fmoulin          ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -26,7 +26,7 @@ RM          = rm -f
 #           SOURCES
 # ===========================
 
-SRCS =  main.cpp PhoneBook.cpp
+SRCS =  main.cpp PhoneBook.cpp Contact.cpp
 		
 OBJS = $(SRCS:%.cpp=$(OBJ_DIR)/%.o)
 

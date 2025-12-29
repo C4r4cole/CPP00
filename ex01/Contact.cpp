@@ -6,7 +6,7 @@
 /*   By: fmoulin <fmoulin@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/12/27 19:58:53 by fmoulin           #+#    #+#             */
-/*   Updated: 2025/12/28 00:11:20 by fmoulin          ###   ########.fr       */
+/*   Updated: 2025/12/29 12:24:04 by fmoulin          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,7 +17,7 @@ Contact::Contact(void)
 {	
 }
 
-void	Contact::setContact(std::string fn, std::string ln, std::string nn, std::string pn, std::string ds)
+void	Contact::setContact(const std::string& fn, const std::string& ln, const std::string& nn, const std::string& pn, const std::string& ds)
 {
 	this->_first_name = fn;
 	this->_last_name = ln;

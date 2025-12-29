@@ -6,7 +6,7 @@
 /*   By: fmoulin <fmoulin@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/12/27 19:37:41 by fmoulin           #+#    #+#             */
-/*   Updated: 2025/12/28 00:37:07 by fmoulin          ###   ########.fr       */
+/*   Updated: 2025/12/29 16:31:02 by fmoulin          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -24,8 +24,8 @@ class PhoneBook
 	public:
 		PhoneBook(void);
 		~PhoneBook(void);
-		void	add();
-		void	search() const;
+		int		add();
+		int		search() const;
 		void	printContact(int index) const;
 };
 
