@@ -11,6 +11,7 @@
 #include <iostream>
 #include <string>
 #include <cstdlib>
+#include <ctime>
 
 Account::Account(int initial_deposit)
 {
@@ -39,4 +40,31 @@ int	Account::getNbWithdrawals(void)
 	return (_totalNbWithdrawals);
 }
 
-static void	displayAccountsInfos( void );
+void	Account::displayAccountsInfos(void)
+{
+	_displayTimestamp();
+	std::cout	<< " "
+				<< "accounts:"
+				<<
+				<< ";total:"
+				<<
+				<< ";deposits:"
+				<<
+				<< ";withdrawals:"
+				<<
+}
+
+void Account::_displayTimestamp(void)
+{
+	std::time_t now = std::time(NULL);
+	std::tm* t = std::localtime(&now);
+	std::cout 	<< "["
+				<< (t->tm_year + 1900)
+				<< (t->tm_mon + 1 < 10 ? "0" : "") << t->tm_mon + 1
+				<< (t->tm_mday < 10 ? "0" : "") << t->tm_mday
+				<< "_"
+				<< (t->tm_hour < 10 ? "0" : "") << t->tm_hour
+				<< (t->tm_min < 10 ? "0" : "") << t->tm_min
+				<< (t->tm_sec < 10 ? "0" : "") << t->tm_sec
+				<< "]";
+}
